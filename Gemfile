@@ -49,6 +49,7 @@ gem "dalli", require: "active_support/cache/dalli_store"
 gem "activeadmin", github: "gregbell/active_admin"
 gem "kakurenbo"
 gem "nokogiri"
+gem "ar-octopus"
 group :deployment do
   gem "net-ssh", "2.7.0"
   gem "capistrano", "~> 3.2.0"

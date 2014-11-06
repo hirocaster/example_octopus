@@ -1,0 +1,25 @@
+octopus:
+  replicated: true
+  environments:
+    - development
+    - test
+    - production
+  development:
+    shards:
+      slave1:
+        adapter: mysql2
+        host: 127.0.0.1
+        port: 3307
+        database: example_octopus_development
+      slave2:
+        adapter: mysql2
+        host: 127.0.0.1
+        port: 3307
+        database: example_octopus_development
+  test:
+    shards:
+      slave1:
+        adapter: mysql2
+        host: 127.0.0.1
+        port: 3307
+        database: example_octopus_test
